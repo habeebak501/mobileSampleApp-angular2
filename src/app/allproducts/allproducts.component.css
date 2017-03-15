@@ -1,0 +1,31 @@
+img{
+  height: 200px;
+  width :100px;
+}
+.container{
+  margin-top: 10%;
+  background-color:"#F5F5DC";
+}
+.thumbnail{
+  box-shadow: 0 0 10px 10px black;
+}
+.text{
+  text-align: center;
+}
+@media screen and (min-width:501px) and (max-width:999px) {
+  img{
+    height: 100px;
+    width :100px;
+  }
+  .thumbnail{
+    height:200px;
+    width:200px;
+    box-shadow: 0 0 5px 5px black;
+  }
+  .imageData{
+    margin-top: 10%;
+    margin-left:20%;
+  }
+}
+/*@media screen and (min-width:px) and (max-width:999px) {
+}*/

@@ -1,0 +1,36 @@
+<div class="row top-buffer">
+<img src="{{product.image.large}}" alt="..." class="img-responsive center-block" />
+</div>
+<div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <p data-toggle="collapse" href="#collapse1">{{product.description}}</p>
+        </h4>
+      </div>
+    </div>
+  <div class = "panel panel-default">
+     <div class = "panel-heading">Mobile Features</div>
+     <table class = "table">
+        <tr>
+           <th rowspan="2">Product</th>
+           <th rowspan="2">Price </th>
+           <th colspan="4" style="text-align:center">Specification</th>
+         </tr>
+             <tr>
+             <th>Camera</th>
+              <th>Manufacturer</th>
+            <th>Os</th>
+            <th>Storage</th>
+        </tr>
+        <tr>
+           <td>{{product.name}}</td>
+           <td>{{product.price}}</td>
+           <td>{{product.specs.camera}}</td>
+           <td>{{product.specs.manufacturer}}</td>
+            <td>{{product.specs.os}}</td>
+            <td>{{product.specs.storage}}</td>
+        </tr>
+     </table>
+  </div>
+</div>

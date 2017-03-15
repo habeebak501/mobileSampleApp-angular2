@@ -1,0 +1,32 @@
+<!-- <div class="sidebar col-sm-3 col-xs-3">
+  <div class="sidebar-menu">
+    <form>
+    <div *ngFor="let item of data">
+      <h4>{{item.title}}</h4>
+      <span *ngFor="let content of item.content">
+        <input type="checkbox" name="item.title" value="content"
+               (click)="checkedContent(item.title,content)" class="checked" id={{content}}>&nbsp;&nbsp;&nbsp;{{content}}<br>
+      </span>
+    </div>
+      <br>
+      <button class="btn btn-block btn-primary" type="reset" (click)="clearAll()">Clear All</button>
+    </form>
+  </div>
+</div> -->
+<span style="font-size:30px;cursor:pointer" (click)="openNav()">&#9776; clickMe</span>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+  <div class="sidebar-menu">
+  <form>
+  <div *ngFor="let item of data">
+    <h4>{{item.title}}</h4>
+    <span class="checkBox" *ngFor="let content of item.content">
+      <input type="checkbox" name="item.title" value="content"
+             (click)="checkedContent(item.title,content)" class="checked" id={{content}}>&nbsp;&nbsp;&nbsp;{{content}}<br>
+    </span>
+  </div>
+    <br>
+    <button class="btn btn-block btn-primary" type="reset" (click)="clearAll()">Clear All</button>
+  </form>
+</div>
+</div>
